@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1>Faraz Shams</h1>
+    <h2>Question # 01</h2>
+
+    <script>
+
+var num = 5.3567;
+document.write("Number :" + num + "<br>")
+var rd_num = Math.round(num);
+document.write("Round value of Number :" + rd_num + "<br>");
+
+rd_num = Math.floor(num);
+document.write("Floor value of the Number :" + rd_num + "<br>")
+rd_num = Math.ceil(num);
+document.write("Ceil value of the Number :" + rd_num)
+    </script>
+
+<h2>Question # 02</h2>
+
+<script>
+
+var num = -5.3567;
+document.write("Number :" + num + "<br>")
+var rd_num = Math.round(num);
+document.write("Round value of Number :" + rd_num + "<br>");
+
+rd_num = Math.floor(num);
+document.write("Floor value of the Number :" + rd_num + "<br>")
+rd_num = Math.ceil(num);
+document.write("Ceil value of the Number :" + rd_num)
+</script>
+<h2>Question # 03</h2>
+<script>
+
+var num = -5.3567;
+document.write("Number :" + num + "<br>")
+var rd_num = Math.abs(num);
+document.write("Absolute value of Number :" + rd_num + "<br>");
+
+var num1 = -78;
+document.write("Absolute value of -78 is :" + Math.abs(num1))
+
+</script>
+
+<h2>Question # 04</h2>
+<script>
+
+
+var num = 5;
+var rnd = Math.random(num);
+var improvedNumber = (rnd * 6) ;
+
+var numofState = Math.round(improvedNumber)
+document.write(numofState)
+
+
+  </script>
+
+<h2>Question # 05</h2>
+<script>
+
+
+var num = Math.random();
+//var rnd = Math.round(num);
+var improvedNumber = (rnd * 3) ;
+
+var numofState = Math.round(improvedNumber)
+//document.write(numofState)
+document.write("Random coin value : ")
+if (numofState == 2){
+    document.write(  "<h2>Heads</h2>")
+}else if(numofState == 1){
+    document.write( "<h2>Tails</h2>")
+}
+
+
+  </script>
+  <h2>Question # 06</h2>
+  <script>
+  
+  var n = Math.random() * 100; 
+   n = Math.floor(n) + 1 ;
+  document.write("Random value between 1 -100 :" + n );
+  
+  
+    </script>
+
+<h2>Question # 07</h2>
+<script>
+document.write("<h3>Weight Of User </h3>")
+var weight = prompt("Enter your Weight In Kilograms" , " 50Kgs ");
+var weightnum ;
+
+for(var i = 0 ; i <weight.length ; i++){
+    if(weight.slice(i , i+3) === "Kgs" || weight.slice(i , i+3) === "Kgs"){
+        weightnum = weight.slice(0,i)
+        document.write("The Weight Of  User is" + weightnum + " " + "kilograms")
+    }
+}
+// if(weight > 0 && weight < 100){
+//     document.write("The Weight Of user is :" + weight + " " + "kilograms ")
+// }
+
+
+  </script>
+
+<h2>Question # 08</h2>
+<script>
+
+var secretNum = 7;
+var user = prompt("Enter Any Number Between 1 - 10");
+
+if(user == secretNum){
+    alert("Congratulations!");
+    document.write("Congratulations ! You Won.")
+}
+else{
+    alert("Please Try Again!")
+    document.write("Sorry ! Your Number Doesn't Match.")
+    
+}
+  </script>
+</body>
+</html>
